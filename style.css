@@ -1,24 +1,5 @@
-#nav-links {
-    display: flex;
-    /*gap=espaccement entre les textes*/
-    gap: 65x;
-    padding: 16PX 8PX 16PX 8PX;
-    margin: 1PX;
-    border-radius: 16PX 1PX 16PX 16PX;
-}
-
-.nav-link {
-
-    color: #000000;
-    text-decoration: none;
-
-    font-family: Heebo;
-    font-weight: 700;
-    font-size: 20px;
-
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: right;
+body {
+    font-family: "Heebo", sans-serif;
 
 }
 
@@ -26,4 +7,48 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: 15px auto 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    /*gap=espaccement entre les textes*/
+    gap: 65px;
+    /* padding: 16PX 8PX 16PX 8PX;
+    margin: 1PX;
+    border-radius: 16PX 1PX 16PX 16PX;*/
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    width: 1200px;
+    margin: 75px auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.para1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+#button-cv {
+    background-color: #FF6464;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5PX 15PX;
 }
