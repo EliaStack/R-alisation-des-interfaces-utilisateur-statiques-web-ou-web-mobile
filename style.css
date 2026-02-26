@@ -63,7 +63,7 @@ h1 {
 
 #blog {
     background-color: #EDF7FA;
-padding-bottom: 35px;
+    padding-bottom: 35px;
 }
 
 #blog-content {
@@ -82,7 +82,7 @@ h2 {
     justify-content: space-between;
 }
 
-.article-blog{
+.article-blog {
     background-color: #FFFFFF;
     border-radius: 4px;
     width: 543px;
@@ -91,11 +91,11 @@ h2 {
     box-sizing: border-box;
 }
 
-.article-title{
+.article-title {
     font-size: 26px;
 }
 
-.date-categorie{
+.date-categorie {
     display: flex;
     font-size: 18px;
     gap: 25px;
@@ -110,30 +110,46 @@ h2 {
     margin: auto;
 }
 
-.projet{
+#projets {
+    width: 1200px;
+    margin: auto;
+}
+
+.projet {
+    display: flex;
+    gap: 50px;
+    margin: 0 0 50px 0;
+}
+
+.projet-title {
+    color: #21243D;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 15px 0;
+}
+
+.date-type {
     display: flex;
     align-items: center;
-    gap: 100px;
-    border-radius: 4px;
- 
-    padding: 10px 20px;
-    /*Aadptation du width avec le padding*/
-    box-sizing: border-box;
-}
-
-.projet-title{
-    color: #21243D;
-    font-size: 30px;
-}
-
-.pdata-date{
-    display: flex;
-    background-color: #142850;
-    color: white;
-    border-radius: 16px;
-    border-width: 62px;
-    font-size: 18px;
     gap: 25px;
 }
 
+.projet-date {
+    background-color: #142850;
+    border-radius: 16px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    text-align: center;
+}
 
+.projet-type {
+    color: #8695A4;
+    font-size: 20px;
+}
+
+.projet-description {
+    font-size: 16px;
+}
