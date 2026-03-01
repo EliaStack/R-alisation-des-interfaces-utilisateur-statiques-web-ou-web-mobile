@@ -8,8 +8,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: 15px auto 0 auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 #nav-links {
@@ -31,8 +35,12 @@ nav {
 header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     margin: 75px auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -67,8 +75,12 @@ h1 {
 }
 
 #blog-content {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -87,6 +99,7 @@ h2 {
     border-radius: 4px;
     width: 543px;
     padding: 10px 20px;
+    max-width: 48%;
     /*Aadptation du width avec le padding*/
     box-sizing: border-box;
 }
@@ -106,13 +119,21 @@ h2 {
 }
 
 #projet-content {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 #projets {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .projet {
@@ -160,8 +181,12 @@ h2 {
 }
 
 #contact {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    /*responsive*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .contact-title {
@@ -205,8 +230,6 @@ textarea {
     height: 46px;
 }
 
-
-
 textarea {
     height: 165px;
 }
@@ -219,19 +242,48 @@ button {
 }
 
 /* Footer */
-footer{
+footer {
     padding-top: 100px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-#icons-socials{
+#icons-socials {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
-#copyright{
+#copyright {
     font-size: 14px;
     color: #21243D;
+}
+
+/*Responsive-Adaptation mobile*/
+@media(max-width:700px) {
+    #coordonnees {
+        display: none;
+    }
+
+    .projet {
+        flex-direction: column;
+    }
+
+    .projet-image {
+        width: 100%;
+    }
+
+    #articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-blog {
+        max-width: none;
+        width: 100%;
+    }
+
+    .date-categorie{
+        gap: 5%;
+    }
 }
