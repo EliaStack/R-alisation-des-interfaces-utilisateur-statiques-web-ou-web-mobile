@@ -198,7 +198,7 @@ h2 {
     font-size: 20px;
 }
 
-#email {
+#contact-email {
     font-size: 16px;
 }
 
@@ -259,6 +259,10 @@ footer {
     color: #21243D;
 }
 
+#menu-button {
+    display: none;
+}
+
 /*Responsive-Adaptation mobile*/
 @media(max-width:700px) {
     #coordonnees {
@@ -283,7 +287,28 @@ footer {
         width: 100%;
     }
 
-    .date-categorie{
+    .date-categorie {
         gap: 5%;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #header-content {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
     }
 }
